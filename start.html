@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>例 game</title>
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+    <style>
+
+
+ 
+    </style>
+</head>
+<body>
+    <div class="position relative w-auto" style="height: 400px">
+        <div class="row position-absolute top-50 start-50 translate-middle">
+            <h1 class="text-center mb-3">テトリス</h1>
+            <button type="button" class="btn btn-outline-primary my-1" id="easyStartButton">Easy</button>
+            <button type="button" class="btn btn-outline-primary my-1" id="hardStartButton">Hard</button>
+            <button type="button" class="btn btn-outline-success my-1" data-bs-toggle="modal" data-bs-target="#settingsButton">設定</button>
+        </div>
+    </div>
+    <!--設定画面のモーダル-->
+    <div class="modal fade" id="settingsButton" tabindex="-1" role="dialog" aria-labelledby="settingsLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="settingsLabel">設定</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row align-items-center d-flex g-2">
+                            <label class="form-label col-auto" for="colorPicker">ブロックの色を選択：</label>
+                            <div class="col-auto">
+                                <input type="color" id="colorPicker" value="#696969">
+                            </div>
+                            <button class="btn-outline-secondary col-3 rounded-pill ms-auto" id="colorButton">追加</button>
+                        </div>
+                        <div id="colorList" class="row p-3"></div>
+                        <div id="colorRemove" class="mt-2"></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">決定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./src/start.js" type="module"></script>
+</body>
+</html>
+
+
+
+
+dsaxsxafdcds
