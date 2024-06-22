@@ -17,11 +17,33 @@
             <h5 id="maxScore" class="col-3 mx-3">最大スコア: 0</h5>
         </div>
     </div>
-    
+
+    <!-- 効果音を再生するためのオーディオ要素 -->
+    <audio id="blockPlacementSound" src="src/btn06.mp3"></audio>
+
     <script src="bootstrap/bootstrap.bundle.min.js"></script>
     <script src="./src/app.js"></script>
+    <script>
+        // ページが読み込まれた後に実行されるコード
+        document.addEventListener('DOMContentLoaded', function() {
+            var blockPlacementSound = document.getElementById('blockPlacementSound');
+
+            // ブロックが設置されたときに効果音を再生する関数
+            function playBlockPlacementSound() {
+                blockPlacementSound.currentTime = 0; // 再生位置を最初に戻す
+                blockPlacementSound.play(); // 効果音を再生する
+            }
+
+          
+            function simulateBlockPlacement() {
+                // ブロックが設置された
+                console.log("ブロックが設置されました。");
+                playBlockPlacementSound(); // 効果音を再生する
+            }
+
+            
+
+        });
+    </script>
 </body>
 </html>
-
-
-dwfefref

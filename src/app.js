@@ -3,7 +3,8 @@ var canvasHeight = 600;
 var blockSize = 30;
 var boardWidth = canvasWidth / blockSize; //ボードの横幅
 var boardHeight = canvasHeight / blockSize; //ボードの縦幅
-var blockLandingSound = new Audio('audio/blockLanding.mp3');
+var blockLandingSound = new Audio('src/btn06.mp3'); //効果音
+
 var lineClearSound = new Audio('audio/lineClear.mp3');
 //ブロックの色を指定
 var tetrominoColors = [
