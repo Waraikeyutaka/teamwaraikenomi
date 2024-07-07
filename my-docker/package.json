@@ -1,0 +1,12 @@
+{
+  "name": "your-api-server",
+  "version": "1.0.0",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.4.5"
+  },
+ 
+"scripts": {
+  "start": "node api/app.js"
+}
+}
