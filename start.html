@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>例 game</title>
     <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
     <style>
 
  
     </style>
 </head>
 <body>
+    <div class="back-style"></div>
     <div class="position relative w-auto" style="height: 400px">
-        <div class="row position-absolute top-50 start-50 translate-middle">
+        <div class="row position-absolute top-50 start-50 translate-middle back-style-opacity p-5 rounded-pill">
             <h1 class="text-center mb-3">テトリス</h1>
             <button type="button" class="btn btn-outline-primary my-1" id="easyStartButton">Easy</button>
             <button type="button" class="btn btn-outline-primary my-1" id="hardStartButton">Hard</button>

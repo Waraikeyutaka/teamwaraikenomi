@@ -6,13 +6,15 @@
     <title>Tetris</title>
 
     <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <div class="back-style"></div>
     <div class="container">
         <div class="row justify-content-center mt-2">
-            <button id="retryButton" class="btn btn-outline-success col-auto col-md-3 h-25 rounded-pill" onclick="location.href='./start.html'">タイトルへ</button>
+            <button id="retryButton" class="btn btn-outline-success col-auto col-md-3 h-25 rounded-pill back-style-none" onclick="location.href='./start.html'">タイトルへ</button>
             <div class="col-auto">
-                <canvas id="canvas" width="360" height="600"></canvas>
+                <canvas class="back-style-none" id="canvas" width="360" height="600"></canvas>
             </div>
             <h5 id="maxScore" class="col-3 mx-3">最大スコア: 0</h5>
         </div>
